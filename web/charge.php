@@ -12,7 +12,6 @@
     $issuer = $_POST['issuersOptions'];
     $external_reference = "PHP sample";
     $payer_email = $_SESSION['payer_email'];
-    echo "issuer ".$issuer;
 
     if(!$installments){
         $installments = 1;
@@ -30,7 +29,6 @@
 
 
     if (isset($_SESSION['customer_id'])){
-      echo "Existe customer ".$_SESSION['customer_id'];
       $body['customer'] = $_SESSION['customer_id'];
     }
     else{
