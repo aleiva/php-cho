@@ -34,7 +34,7 @@ if ($_POST) {
 
 ?>
 
-            <label class="card-label hidden" for="cardId">
+            <label class="card-label select hidden" for="cardId">
               <select id="cardId" name="cardId" data-checkout='cardId' class="card-field">
                 <?php
                   echo implode("\n", $options);
@@ -62,16 +62,18 @@ if ($_POST) {
                  <input data-checkout="securityCode"  placeholder="CVV" type="text" class="card-field"/>
             </label>
         </div>    
-        <p id="issuersField" class="hidden">
-            <label class="card-label" for="issuersOptions">
+        <div id="issuersField" class="hidden">
+            <label class="card-label select" for="issuersOptions">
                 <select id="issuersOptions" name="issuersOptions" class="card-field">
                 </select>
             </label>
-        </p>
-        <p id="installmentsOption" class="hidden">
-            <select id="installments" name="installments" class="card-field">
-            </select>
-        </p>
+        </div>
+        <div id="installmentsOption" class="hidden">
+            <label class="card-label select" for="installments">
+                <select id="installments" name="installments" class="card-field">
+                </select>
+            </label>
+        </div>
 
          <div>
            <label class="card-label" for="cardholderName">
@@ -80,7 +82,7 @@ if ($_POST) {
             </label>
         </div>
         <div>
-            <label class="card-label hidden" for="docType">
+            <label class="card-label select hidden" for="docType">
                 <span id="docType" class="card-field "></span>
             </label>    
             <!--label class="card-label hidden" for="subDocType">

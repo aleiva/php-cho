@@ -328,6 +328,9 @@ img {
       background: transparent;
       -webkit-animation: cardFieldAnimation 800ms linear both;
       animation: cardFieldAnimation 800ms linear both; }
+    .card-label.select{
+      border-top: none;
+    }
     .is-modern .card-label.invalid .invalid-bottom-bar {
       -webkit-animation: invalidBarAnimation 1600ms linear both;
       animation: invalidBarAnimation 1600ms linear both; }
