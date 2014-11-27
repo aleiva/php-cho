@@ -1,0 +1,71 @@
+.payment-method {
+  display: block;
+  background-position: -100px; 
+  position: absolute;
+  left: auto;
+  right: 14px;
+  top: 50%;
+  width: 41px;
+  height: 27px;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  border: solid 1px transparent;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px; 
+    background-image: url('../images/payment-methods.png');
+}
+
+.payment-method.visa {
+  background-position: 0px 8px; 
+}
+
+.payment-method.master {
+  background-position: 6px -45px;
+}
+
+.payment-method.amex {
+  background-position: 11px -94px;
+}
+
+.payment-method.diners {
+  background-position: 10px -144px;
+}
+
+.payment-method.naranja {
+  background-position: 11px -196px;
+}
+
+.payment-method.nativa {
+  background-position: 2px -244px;
+}
+
+.payment-method.shopping {
+  background-position: 7px -294px;
+}
+
+.payment-method.cencosud {
+  background-position: 8px -344px;
+}
+
+.payment-method.cabal {
+  background-position: 12px -394px;
+}
+
+.payment-method.argencard {
+  background-position: 11px -445px;
+}
+
+.payment-method.hipercard {
+  background-position: 3px -493px;
+}
+
+.payment-method.elo {
+  background-position: 12px -543px;
+}
+
+.payment-method.melicard {
+  background-position: 10px -592px;
+}
