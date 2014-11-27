@@ -7,8 +7,6 @@ function get_customer($email_address)
 
     $response = $meli->getAccessToken();
 
-    //echo "https://api.mercadolibre.com/customers/search?email=".$email_address."&access_token=".$response['body']->access_token;
-
     $params = array('email' => $email_address,'access_token' => $response['body']->access_token);
 
     $customers = $meli->get('/customers/search', $params);
