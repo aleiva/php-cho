@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Pay</title>
+  </head>
+  <body>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://js.getmango.com/v1/mango.js"></script>
+  <script type="text/javascript">
+    Checkout.setPublishableKey("----public_key----");
+  </script>
+
+<form id="form" action="/server" method="POST">
+  <fieldset>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+  </fieldset>
+  <fieldset>
+    <label for="amount">Monto</label>
+    <input type="text" id="df-amount" name="amount" required>
+    <label for="df-cardholder">Nombre en la tarjeta</label>
+    <input type="text" id="df-holdername" required>
+    <label for="df-type">Tipo de tarjeta</label>
+    <select id="df-type">
+      <option value="visa">Visa</option>
+      <option value="amex">American Express</option>
+    </select>
+    <label for="card">Número de tarjeta</label>
+    <input type="number" id="card" maxlength="16" required>
+    <label for="month">Mes de expiración</label>
+    <input type="number" id="month" required>
+    <label for="year">Año de expiración</label>
+    <input type="number" id="year" required>
+    <label for="ccv">Código de seguridad</label>
+    <input type="number" id="ccv" required>
+  </fieldset>
+  <input type="submit" value="Pagar ahora">
+</form>
+
+  </body>
+</html>
